@@ -27,6 +27,17 @@
   --SQUARE-SIZE:max(150px, 20vw);
 }
 
+/* DARK MODE USERS */
+@media (prefers-color-scheme: dark) {
+  :root {
+  --BGCOLOR: #0d0f13;
+  --LIGHT-COLOR: rgb(204, 204, 204);
+  --DARK-COLOR:#050505;
+  --FTCOLOR:#05070a;
+  --SQUARE-BGCOLOR: rgb(46, 43, 39);
+  }
+}
+
 /* || GENERAL STYLES */
 body {
   font: var(--FS) var(--FF);
@@ -97,7 +108,6 @@ footer {
   place-content: center;
   font-size: var(--FS-XL);
   box-shadow: var(--SHADOWS);
-  color: var(--DARK-COLOR);
 }
 
 .square--highlight {
